@@ -5,14 +5,15 @@ package com.example.model;
 
 import java.time.LocalDate;
 
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 import lombok.Data;
 
 /**
@@ -47,6 +48,6 @@ public class PlanCategory {
 	
 	@Column(name = "UPDATED_DATE", insertable = false)
 	@UpdateTimestamp
-	private LocalDate updateDate;
+	private LocalDate updateDate;	
 
 }
